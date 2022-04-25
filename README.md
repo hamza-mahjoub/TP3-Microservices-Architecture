@@ -40,9 +40,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project illustrates the communication between different microservices. We have the forecast microservice that communicates with auth microservice which assure the the user is well connected via static data.
+This project illustrates the communication between different microservices. We have the forecast microservice that communicates with auth microservice which assure the user is well connected via static data.
 The forecast app will simply return data (a CSV File) when the user is connected or redirect to the auth microservice in case of failure.
-I used the **Registry** app to expose and easily reference the difference microservices using the **Eureka Server and client**.
+I used the **Registry** app to expose and easily reference the different microservices using the **Eureka Server and client**.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
