@@ -83,7 +83,11 @@ Make sure you have a suited Java IDE.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-**Eureka Server** home page:
-![eureka](assets/Capture d’écran 2022-04-25 185552.jpg)
+1. Run the Registry app.
+2. Run the other two microservices.
+
+navigate to ```http://localhost:8761/``` to displate the **Eureka Server** home page: <br />
+
+![eureka](assets/eureka.jpg)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
