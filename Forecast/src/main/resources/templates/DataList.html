@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Welcome</h1>
+<table>
+    <thead>
+    <tr>
+        <th> Instances </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${instances.empty}">
+        <td colspan="2"> No Instances Available </td>
+    </tr>
+    <tr th:each="instance : ${instances}">
+        <td> <p th:text="${instance}">Test</p></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>

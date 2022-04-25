@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1>Welcome</h1>
+<table>
+    <thead>
+    <tr>
+        <th> Series_reference </th>
+        <th> Period </th>
+        <th> Data_value </th>
+        <th> STATUS </th>
+        <th> UNITS </th>
+        <th> Subject </th>
+        <th> Group </th>
+        <th> Series_title </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${products.empty}">
+        <td colspan="2"> No Instances Available </td>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td> <span th:text="${product.Series_reference}">Series_reference</span></td>
+        <td> <span th:text="${product.Period}">Period</span></td>
+        <td> <span th:text="${product.Data_value}">Data_value</span></td>
+        <td> <span th:text="${product.STATUS}">STATUS</span></td>
+        <td> <span th:text="${product.UNITS}">UNITS</span></td>
+        <td> <span th:text="${product.Subject}">Subject</span></td>
+        <td> <span th:text="${product.Group}">Group</span></td>
+        <td> <span th:text="${product.Series_title}">Series_title</span></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>
